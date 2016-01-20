@@ -1,0 +1,5 @@
+ArrayList<Contacts>contactList = new ArrayList<Contacts>();
+String csvFileToRead = 
+BufferedReader br = null;
+String textLine = "";
+String splitBy = ",";
