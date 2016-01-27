@@ -1,0 +1,33 @@
+package as.java.projectone;
+
+public class Contacts {
+	
+	private int contactID;
+	private String firstName;
+	private String lastName;
+	private String notes;
+	public Contacts(int ContactID, String firstName, String lastName, String notes){
+		this.contactID = contactID;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.notes = notes;
+	}
+	public int getcontactID(){
+		return contactID;
+	}
+	public String getfirstName(){
+		return firstName;
+	}
+	public String getlastName(){
+		return lastName;
+	}
+	public String getnotes(){
+		return notes;
+	}
+	
+	@Override
+	public String toString(){
+		return("ID: "+ this.getcontactID() + " Name: " + this.getfirstName() + " " + this.getlastName() + " Notes: " + this.getnotes());
+	}
+
+}
